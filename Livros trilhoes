@@ -1,0 +1,74 @@
+# This workflow will build a Java project with Ant
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
+
+name: Java CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+    - name: Build with Ant
+      run: ant -noinput -buildfile build.xml
+Abaixo está a lista oficial com os **códigos de compensação (números de 3 dígitos)** padronizados pelo Banco Central do Brasil para as principais instituições financeiras e bancos digitais do país:
+
+---
+
+### 🏛️ Bancos Tradicionais e Estatais
+
+| Código | Instituição Financeira |
+| :---: | :--- |
+| **001** | Banco do Brasil S.A. |
+| **033** | Banco Santander (Brasil) S.A. |
+| **104** | Caixa Econômica Federal |
+| **237** | Banco Bradesco S.A. |
+| **341** | Itaú Unibanco S.A. |
+| **389** | Banco Mercantil do Brasil S.A. |
+| **422** | Banco Safra S.A. |
+
+---
+
+### 📱 Bancos Digitais e Contas de Pagamento
+
+| Código | Instituição Financeira |
+| :---: | :--- |
+| **077** | Banco Inter S.A. |
+| **260** | Nu Pagamentos S.A. (Nubank) |
+| **336** | Banco C6 S.A. |
+| **323** | Mercado Pago (Mercado Livre) |
+| **212** | Banco Original S.A. |
+| **655** | Banco Votorantim / Neon |
+
+---
+
+### 🤝 Cooperativas de Crédito
+
+| Código | Instituição Financeira |
+| :---: | :--- |
+| **748** | Sicredi (Banco Cooperativo Sicredi S.A.) |
+| **756** | Sicoob (Banco Cooperativo do Brasil S.A.) |
+
+---
+
+### 🌐 Outros Bancos e Instituições
+
+| Código | Instituição Financeira |
+| :---: | :--- |
+| **041** | Banrisul (Banco do Estado do Rio Grande do Sul) |
+| **070** | BRB – Banco de Brasília S.A. |
+| **623** | Banco PAN S.A. |
+| **712** | Ouribank S.A. |
+| **745** | Citibank N.A. |
